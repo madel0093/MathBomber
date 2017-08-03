@@ -1,0 +1,23 @@
+function full_array() :void
+{
+	var temp:int;
+	var max:int;
+	var coun:int; 
+	var repeat:Boolean;
+	repeat = true;
+	max=114;
+	temp = ( Math.floor(Math.random() * (1 + 12 - 1) + 1)) * (current_level) ;
+	myArray.push(temp);
+		while(myArray.length != 8)
+		{
+			temp=1 + (max - 1) * Math.random();
+		for(coun = 0 ; coun <= myArray.length ; coun ++)
+		{
+		if(temp == myArray[coun])
+		repeat = false;
+		}
+		if(repeat)
+		 {  myArray.push(temp);   }
+		 repeat = true;
+		}
+}
